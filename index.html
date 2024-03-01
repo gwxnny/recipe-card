@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Recipe page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    @font-face {
+      font-family: Outfit-VariableFont;
+      src: url(assets/fonts/outfit/Outfit-VariableFont_wght.ttf);
+    }
+
+    @font-face {
+      font-family: YoungSerif-Regular;
+      src: url(assets/fonts/young-serif/YoungSerif-Regular.ttf);
+    }
+
+    * {
+      margin: 14px auto;
+      align-items: center;
+    }
+
+    h1,
+    p {
+      margin: 10px;
+    }
+
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+
+    body {
+      background-color: #f3e5d8;
+    }
+
+    .omelette-img {
+      width: 470px;
+      border-radius: 10px;
+      text-align: center;
+    }
+
+    .section1 {
+      text-align: center;
+    }
+
+    .container {
+      max-width: 500px;
+      background-color: white;
+      border-radius: 20px;
+      padding: 10px;
+      margin: 60px auto;
+    }
+
+    .title {
+      font-family: YoungSerif-Regular;
+      font-size: 30px;
+      font-weight: 100;
+      color: #2d2c2a;
+    }
+
+    .header {
+      font-family: YoungSerif-Regular;
+      color: #824832;
+      font-weight: 100;
+    }
+
+    .header-ltd {
+      color: #673349;
+      font-family: Outfit-VariableFont;
+    }
+
+    .ul-ver1 {
+      color: #673349;
+      font-family: Outfit-VariableFont;
+      font-size: 11px;
+    }
+
+    .ul-ver2 {
+      color: #824832;
+      font-family: Outfit-VariableFont;
+      font-size: 11px;
+    }
+
+    .ol-ver1 {
+      color: #824832;
+      font-family: Outfit-VariableFont;
+      font-weight: bold;
+      font-size: 11px;
+    }
+
+    li p {
+      color: #585452;
+      font-weight: normal;
+    }
+
+    p {
+      font-size: 11px;
+      color: #585452;
+      font-family: Outfit-VariableFont;
+    }
+
+    hr {
+      margin: 10px auto;
+      color: rgba(0, 0, 0, 0.5);
+      border: 1px solid rgba(0, 0, 0, 0.04);
+      width: 450px;
+    }
+
+    .section3 {
+      background-color: #fff7fc;
+      border-radius: 10px;
+      padding: 10px 10px;
+    }
+
+    .whole-text {
+      max-width: 480px;
+    }
+
+    table {
+      width: 450px;
+      text-align: left;
+      font-family: Outfit-VariableFont;
+      border-collapse: separate;
+    }
+
+    .td-style1 {
+      color: #585452;
+      font-size: 11px;
+    }
+
+    .td-style2 {
+      color: #824832;
+      font-weight: bold;
+      font-size: 11px;
+    }
+
+    td {
+      padding: 5px;
+      padding-left: 20px;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
+tr:last-child {
+  border-bottom: none;
+}
+
+    @media only screen and (max-width: 375px) {
+
+      /* Mobile */
+      html,
+      body,
+      main,
+      .section1 {
+        margin: 0;
+      }
+
+      body {
+        background-color: white;
+      }
+
+      .container {
+        border-radius: 0px;
+        margin: auto;
+        padding: 0px;
+      }
+
+      .omelette-img {
+        width: 100%;
+        border-radius: 0px;
+        margin: 0;
+      }
+
+      .whole-text {
+        padding: 10px 25px;
+      }
+
+      .title {
+        font-size: 32px;
+      }
+
+      p, ::marker, .td-style1, .td-style2 {
+        font-size: 16px;
+      }
+    }
+
+    .header {
+      font-size: 25px;
+    }
+
+    table {
+      width: 290px;
+    }
+
+    td {
+      padding: 10px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <main>
+    <section class="container">
+
+      <section class="section1"> <!-- Omelette Image -->
+        <img src="assets/images/image-omelette.jpeg" alt="omelette" class="omelette-img">
+      </section>
+
+      <div class="whole-text">
+        <section class="section2"> <!-- Part 1 | Title & Desc -->
+          <h1 class="title">Simple Omelette Recipe</h1>
+          <p>An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked
+            to perfection, optionally filled with your choice of cheese, vegetables, or meats.</p>
+        </section>
+
+        <section class="section3"> <!-- Part 2 | Prep Time -->
+          <h1 class="header-ltd">Preparation time</h1>
+          <ul class="ul-ver1">
+            <li>
+              <p><b>Total</b>: Approximately 10 minutes</p>
+            </li>
+            <li>
+              <p><b>Preparation</b>: 5 minutes</p>
+            </li>
+            <li>
+              <p><b>Cooking</b>: 5 minutes</p>
+            </li>
+          </ul>
+        </section>
+
+        <section class="section4"> <!-- Part 3 | Ingredients -->
+          <h1 class="header">Ingredients</h1>
+          <ul class="ul-ver2">
+            <li>
+              <p>2-3 large eggs</p>
+            </li>
+            <li>
+              <p>Salt, to taste</p>
+            </li>
+            <li>
+              <p>Pepper, to taste</p>
+            </li>
+            <li>
+              <p>1 tablespoon of butter or oil</p>
+            </li>
+            <li>
+              <p>Optional fillings: cheese, diced vegetables, cooked meats, herbs</p>
+            </li>
+          </ul>
+        </section>
+
+        <hr>
+
+        <section class="section5"> <!-- Part 4 | Instructions -->
+          <h1 class="header">Instructions</h1>
+          <ol class="ol-ver1">
+            <li>
+              <p><b>Beat the eggs</b>: In a bowl, beat the eggs with a pinch of salt and pepper until they are well
+                mixed.
+                You can add a tablespoon of water or milk for a fluffier texture.</p>
+            </li>
+            <li>
+              <p><b>Heat the pa</b>n: Place a non-stick frying pan over medium heat and add butter or oil.</p>
+            </li>
+            <li>
+              <p><b>Cook the omelette</b>: Once the butter is melted and bubbling, pour in the eggs. Tilt the pan to
+                ensure
+                the eggs evenly coat the surface.</p>
+            </li>
+            <li>
+              <p><b>Add fillings (optional)</b>: When the eggs begin to set at the edges but are still slightly runny in
+                the
+                middle, sprinkle your chosen fillings over one half of the omelette.</p>
+            </li>
+            <li>
+              <p><b>Fold and serve</b>: As the omelette continues to cook, carefully lift one edge and fold it over the
+                fillings. Let it cook for another minute, then slide it onto a plate.</p>
+            </li>
+            <li>
+              <p><b>Enjoy</b>: Serve hot, with additional salt and pepper if needed.</p>
+            </li>
+          </ol>
+        </section>
+
+        <hr>
+
+        <section class="section6"> <!-- Part 5 | Nutrition -->
+          <h1 class="header">Nutrition</h1>
+
+          <p>The table below shows nutritional values per serving without the additional fillings.</p>
+
+          <table>
+            <tr>
+              <td class="td-style1">Calories</td>
+              <td class="td-style2">277kcal</td>
+            </tr>
+            <tr>
+              <td class="td-style1">Carbs</td>
+              <td class="td-style2">0g</td>
+            </tr>
+            <tr>
+              <td class="td-style1">Protein</td>
+              <td class="td-style2">20g</td>
+            </tr>
+            <tr>
+              <td class="td-style1">Fat</td>
+              <td class="td-style2">22g</td>
+            </tr>
+          </table>
+        </section>
+
+        <div class="attribution">
+          Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+          Coded by <a href="#">gwen</a>.
+        </div>
+      </div>
+
+
+    </section>
+  </main>
+
+
+</body>
+
+</html>
